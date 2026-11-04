@@ -1,4 +1,4 @@
-package com.bookmart.bookmart;
+package com.bookmart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
