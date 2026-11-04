@@ -5,19 +5,17 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar-inner">
         <Link to="/" className="brand">
-          <span className="brand-icon">B</span>
-          <span>bookmart<span className="brand-dot">.</span></span>
+          <span>Bookmart</span>
         </Link>
 
         <nav className="nav-links">
-          <NavLink to="/" end>Home</NavLink>
-          <NavLink to="/books">Explore Books</NavLink>
-          <NavLink to="/reading-list">Reading List</NavLink>
-          <NavLink to="/manage-books">Manage Books</NavLink>
+          <NavLink to="/books">Shop books</NavLink>
+          <NavLink to="/reading-list">My reading list</NavLink>
+          <NavLink to="/manage-books">Manage inventory</NavLink>
         </nav>
 
-        <Link to="/books" className="navbar-button">
-          Browse collection <span>↗</span>
+        <Link to="/reading-list" className="reading-shortcut">
+          <span>♡</span> Reading list
         </Link>
       </div>
     </header>

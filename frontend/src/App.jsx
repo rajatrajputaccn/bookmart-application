@@ -23,7 +23,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>© 2026 BookMart. A little world of books.</p>
+        <p>Made by Rajat Rajput (Java FDE Cohort 3)</p>
       </footer>
     </div>
   )
