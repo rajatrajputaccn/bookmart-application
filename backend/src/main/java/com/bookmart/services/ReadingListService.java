@@ -72,12 +72,14 @@ public class ReadingListService {
 
         if (!bookRepository.existsById(bookId)) {
             throw new ResourceNotFoundException(
-                    "Book not found with ID: " + bookId);
+                    "Book not found with ID: " + bookId
+            );
         }
 
         if (!readingListRepository.existsByBook_Id(bookId)) {
             throw new ResourceNotFoundException(
-                    "Book is not present in the reading list");
+                    "Book is not in the reading list"
+            );
         }
 
         readingListRepository.deleteByBook_Id(bookId);
